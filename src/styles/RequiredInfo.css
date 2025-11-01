@@ -1,0 +1,317 @@
+/* Transport Request Form Styles */
+.required-info-rectangle {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-section {
+  margin-bottom: 0;
+}
+
+.form-section-contact {
+  margin-bottom: 32px;
+}
+.form-sections-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #F9FAFB;
+  border-radius: 15px;
+  padding: 25px;
+  position: relative; /* For absolute positioned purple icon */
+}
+
+.purple-icon-container {
+  position: absolute;
+  top: 20px;           /* Adjustable: distance from top */
+  right: 20px;         /* Changed from left to right side */
+  z-index: 10;         /* Ensure it stays on top */
+}
+
+.purple-icon {
+  width: 24px;
+  height: 24px;
+  /* Easily adjustable properties below */
+  /* color: #5856D6; */     /* Icon color (purple) */
+  /* opacity: 1; */         /* Icon opacity */
+  /* Add any other styling as needed */
+}
+.section-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #101828;
+  margin-bottom: 16px;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+}
+
+.cab-type-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #344054;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.radio-group {
+  display: flex;
+  column-gap: 28px;
+  row-gap: 24px;
+  align-items: center;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #344054;
+}
+
+.radio-input {
+  accent-color: #38AEE0;
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+  height: 21px;
+  margin: 0;
+}
+
+.radio-container {
+  position: relative;
+  width: 20px;
+  height: 21px;
+  margin-right: 8px;
+}
+
+.radio-checked-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.radio-unchecked-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.radio-label.checked {
+  font-weight: 700;
+  color: #000000;
+}
+
+.radio-label.unchecked {
+  font-weight: 400;
+  color: #6E6E6E;
+}
+
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 66.66%;
+}
+
+.form-field-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #344054;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-select-input {
+  width: 100%;
+  padding: 10px 44px 10px 14px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #101828;
+  background-color: #FFFFFF;
+  height: 44px;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  box-sizing: border-box;
+  appearance: none;
+  background-image: none;
+  position: relative;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 16px;
+  height: 16px;
+}
+
+.clock-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 16px;
+  height: 17px;
+  opacity: 0.6;
+}
+
+.location-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+.form-text-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #101828;
+  background-color: #FFFFFF;
+  height: 44px;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.form-text-input::placeholder {
+  color: #667085;
+  font-size: 14px;
+}
+
+.form-date-input,
+.form-time-input {
+  width: 100%;
+  padding: 10px 44px 10px 14px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #101828;
+  background-color: #FFFFFF;
+  height: 44px;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Hide default browser time picker icon */
+.form-time-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.form-time-input::-webkit-inner-spin-button,
+.form-time-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide default browser date picker icon */
+.form-date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.form-date-input::-webkit-inner-spin-button,
+.form-date-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.required-asterisk {
+  color: #e11d48;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.submit-button-icon {
+  cursor: pointer;
+  display: block;
+}
+
+.view-policies-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  justify-content: flex-start;
+}
+
+.view-policies-icon {
+  width: 20px;
+  height: 20px;
+  color: #667185;
+}
+
+.view-policies-text {
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #667185;
+  line-height: 1.4;
+}
+.required-info-title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.required-info-title > span {
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 145%;
+  letter-spacing: 0%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+  top: -2px;
+}
+
+.clipboard-icon {
+  position: relative;
+  top: 0;
+}

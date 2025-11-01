@@ -1,0 +1,6 @@
+/* Page2 - Separate styling that won't affect other pages */
+.transport-request-page-2 {
+  min-height: 100vh;
+  background-color: #f7fafc;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+}
