@@ -12,6 +12,7 @@ import RadioUnchecked from './svg_comp/RadioUnchecked';
 import FileIcon from './svg_comp/FileIcon';
 import PurpleIcon from './svg_comp/PurpleIcon';
 import CrossIcon from './svg_comp/CrossIcon';
+import ModalArrow from './svg_comp/ModalArrow';
 
 const RequiredInfo = ({ onClick, className = "" }) => {
   const [cabType, setCabType] = useState('teamLunch');
@@ -194,6 +195,7 @@ const RequiredInfo = ({ onClick, className = "" }) => {
           {isModalOpen && (
             <div className="modal-overlay">
               <div className="modal-content">
+                <ModalArrow className="modal-arrow" width={12} height={7} />
                 <div className="modal-header">
                   <h2 className="modal-title">Note Before Booking:</h2>
                   <button className="modal-close-btn" onClick={() => setIsModalOpen(false)}>

@@ -1,0 +1,22 @@
+import React from 'react';
+
+const ModalArrow = ({ width = 12, height = 7, className = '', ...props }) => (
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 12 7"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M-0.000607491 5.65565L5.65625 -0.00120258L11.3131 5.65565L10.606 6.36276L5.65625 1.41301L0.7065 6.36276L-0.000607491 5.65565Z"
+      fill="#D9D9D9"
+    />
+  </svg>
+);
+
+export default ModalArrow;
