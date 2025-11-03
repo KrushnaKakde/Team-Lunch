@@ -11,6 +11,7 @@
 .form-section-contact {
   margin-bottom: 32px;
 }
+
 .form-sections-container {
   display: flex;
   flex-direction: column;
@@ -18,7 +19,7 @@
   background-color: #F9FAFB;
   border-radius: 15px;
   padding: 25px;
-  position: relative; /* For absolute positioned purple icon */
+  position: relative; /* For absolute positioned purple icon and modal */
 }
 
 .purple-icon-container {
@@ -315,3 +316,86 @@
   position: relative;
   top: 0;
 }
+
+/* Modal Styles */
+.modal-overlay {
+  position: absolute;
+  top: 47px;
+  right: 19px;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: inline-flex;
+  height: auto;
+  height: 231px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+  border-radius: var(--sds-size-radius-200, 8px);
+  border: var(--sds-size-stroke-border, 1px) solid var(--Border, #E5E7EB);
+  background: var(--sds-color-background-default-default, #FFFFFF);
+  box-shadow: 0 4px 7px 0 rgba(31, 54, 199, 0.06);
+  position: relative;
+  min-width: 600px;
+  max-width: 800px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.modal-title {
+  color: #202224;
+  font-family: "Samsung InterFace", Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.modal-close-btn:hover {
+  opacity: 0.8;
+}
+
+.modal-body {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-text p {
+  color: #606060;
+  font-family: "Samsung InterFace", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+  padding: 0;
+} 

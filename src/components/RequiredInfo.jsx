@@ -11,9 +11,11 @@ import RadioChecked from './svg_comp/RadioChecked';
 import RadioUnchecked from './svg_comp/RadioUnchecked';
 import FileIcon from './svg_comp/FileIcon';
 import PurpleIcon from './svg_comp/PurpleIcon';
+import CrossIcon from './svg_comp/CrossIcon';
 
 const RequiredInfo = ({ onClick, className = "" }) => {
   const [cabType, setCabType] = useState('teamLunch');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className={`required-info-rectangle ${className}`}> 
@@ -26,7 +28,7 @@ const RequiredInfo = ({ onClick, className = "" }) => {
       <div className="worklet-details-card">
         <div className="form-sections-container">
           {/* Purple Icon at top left */}
-          <div className="purple-icon-container">
+          <div className="purple-icon-container" onClick={() => setIsModalOpen(true)} style={{ cursor: 'pointer' }}>
             <PurpleIcon className="purple-icon" width={20} height={18} />
           </div>
 
@@ -187,6 +189,31 @@ const RequiredInfo = ({ onClick, className = "" }) => {
             <FileIcon className="view-policies-icon" width={20} height={20} />
             <span className="view-policies-text">View Policies</span>
           </div>
+
+          {/* Modal */}
+          {isModalOpen && (
+            <div className="modal-overlay">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h2 className="modal-title">Note Before Booking:</h2>
+                  <button className="modal-close-btn" onClick={() => setIsModalOpen(false)}>
+                    <CrossIcon width={16} height={16} />
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <div className="modal-text">
+                    <p>• 1) Details shall be shared via email/SMS 1 hour prior to booking time.</p>
+                    <p>&nbsp;&nbsp;2) Employee who has raised the request shall also be the SPOC for any co-ordination.</p>
+                    <p>&nbsp;&nbsp;3) Any parking charges to be borne by employee only.</p>
+                    <p>&nbsp;&nbsp;4) In case of less than 10 members, kindly raise cab requests as required.</p>
+                    <p>&nbsp;&nbsp;5) Do reach out to 9740639191 / 7406999191 for any support during commute.</p>
+                    <p>&nbsp;&nbsp;6) Any food or Beverage shall not be permitted in the bus.</p>
+                    <p>&nbsp;&nbsp;7) Employee can raise a request up to a working day prior to request, before 5 pm.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
