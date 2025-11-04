@@ -255,15 +255,15 @@ const RequiredInfoPage3 = ({ onClick, className = "" }) => {
                 <tbody>
                   <tr>
                     <td>Alliance</td>
-                    <td>1</td>
-                    <td>30012541</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+                    <td>&nbsp;&nbsp;30012541</td>
                     <td>Shankar</td>
                     <td>7550142047</td>
                   </tr>
                   <tr>
                     <td>Tempo Traveller</td>
-                    <td>1</td>
-                    <td>600146741</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+                    <td>&nbsp;&nbsp;600146741</td>
                     <td>Sajid Mehta</td>
                     <td>7550142047</td>
                   </tr>
